@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+
+body {
+  margin: 0;
+  padding: 120px 0 0 0;
+  background-color: #003b46;
+  color: #107e83;
+  font-family: "Ubuntu", sans-serif;
+  display: block;
+  text-align: center;
+}
+
+main {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(0%, -100%);
+  -webkit-transform: translate(-50%, -50%);
+  width: 100%;
+}
+
+img {
+  height: 100px;
+  padding-top: 18%;
+}
+
+a {
+  background-color: #ffffff05;
+  height: 150px;
+  width: 150px;
+  border-radius: 15%;
+  display: inline-block;
+  margin: 20px 20px 20px 20px;
+  -webkit-transition: 400ms;
+  transition: 400ms;
+}
+
+a:hover {
+  background-color: #ffffff14;
+  -webkit-transition: 400ms;
+  transition: 400ms;
+}
+
+input {
+  font-family: "Ubuntu", sans-serif;
+  width: 1080px;
+  height: 80px;
+  background-color: #ffffff05;
+  border: none;
+  border-radius: 20px;
+  margin-top: 25px;
+  color: #c4dfe6;
+  font-size: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+#time {
+  padding-top: 40px;
+  font-size: 110px;
+  margin-bottom: 20px;
+  text-shadow: 3px 3px #095559;
+}
+
+#date {
+  margin-top: -20px;
+  font-size: 35px;
+  text-shadow: 2px 2px #084a4d;
+  color: #107c82;
+}
+
+::-moz-selection {
+  background-color: #ffffff0a;
+}
+
+::selection {
+  background-color: #ffffff0a;
+}
+
+::-moz-selection {
+  background-color: #ffffff0a;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+::-webkit-input-placeholder {
+  color: #0d686d;
+}
+
+:-moz-placeholder {
+  color: #0d686d;
+}
+
+::-moz-placeholder {
+  color: #0d686d;
+}
+
+:-ms-input-placeholder {
+  color: #0d686d;
+}
+
+textarea:focus, input:focus {
+  outline: none;
+}

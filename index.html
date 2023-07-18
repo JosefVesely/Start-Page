@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Start Page</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css">
+    <script src="js/time_date.js"></script>
+</head>
+<body onload="time(), date()">
+    <main>
+        <nav>
+            <a href="https://www.youtube.com"><img src="images/youtube.png"></i></a>
+            <a href="https://www.reddit.com"><img src="images/reddit.png"></i></a>
+            <a href="https://www.messenger.com"><img src="images/messenger.png"></i></a>
+            <a href="https://outlook.office.com/mail/inbox"><img src="images/outlook.png"></i></a>
+            <a href="https://www.github.com"><img src="images/github.png"></i></a>
+            <a href="https://www.netflix.com/home"><img src="images/netflix.png"></i></a>
+        </nav>
+        
+        <section>
+            <form method="get" action="https://www.google.com/search?q=">
+            <input type="text" placeholder="Search" name="q" size="25" maxlength="255" autocomplete="off" value="">
+        </section>
+
+        <div id="time"></div>
+        <div id="date"></div>
+    </main>
+</body>
+</html>
