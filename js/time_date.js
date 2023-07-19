@@ -37,7 +37,7 @@ function date(){
     
     var day = now.getDate()
     var suffix = get_suffix(day);
-    var day_name = days[now.getDay()];
+    var day_name = days[now.getDay()-1];
     var month = months[now.getMonth()];
     var year = now.getFullYear();
 
