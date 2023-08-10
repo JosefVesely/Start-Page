@@ -1,4 +1,4 @@
-function time() {
+function update_time() {
     var now = new Date();
     var hours = now.getHours();
     var minutes = now.getMinutes();
@@ -11,7 +11,7 @@ function time() {
 
     document.getElementById("time").innerHTML = time;
     
-    setTimeout(time, 1000);
+    setTimeout(update_time, 1000);
 }
 
 function get_suffix(number) {
@@ -30,14 +30,14 @@ function get_suffix(number) {
     return "th";
 }
 
-function date(){
+function update_date() {
 	var now = new Date();
-    var days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
+    var days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
     var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
     
     var day = now.getDate()
     var suffix = get_suffix(day);
-    var day_name = days[now.getDay()-1];
+    var day_name = days[now.getDay()];
     var month = months[now.getMonth()];
     var year = now.getFullYear();
 
@@ -45,5 +45,5 @@ function date(){
 
 	document.getElementById("date").innerHTML = date;
 
-	setTimeout(date, 1000);
+	setTimeout(update_date, 1000);
 }
